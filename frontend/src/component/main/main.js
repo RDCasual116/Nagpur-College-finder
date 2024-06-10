@@ -1,7 +1,9 @@
 import React from 'react';
 import "./main.css";
-import College from "./college.js";
+import College from "../college/college.js";
 import data from "./data.js";
+
+import {useNavigate} from 'react-router-dom';
 export default function(){
 const college=data.map(c=>
 <College
@@ -14,6 +16,7 @@ cutoff={c.cutoff}
 m_course={c.m_course}
 />
 );
+const navi=useNavigate();
 return(
 <div className="Main">
   <div className="ct">
@@ -30,12 +33,18 @@ justifyContent:"space-around"
 </div>
 <h2>Courses</h2>
 <div className="coursecontainer">
-<div className="courses"><img src="./pic/eng.jpg"/>ENGINEERING</div>
-<div className="courses"><img src="./pic/med.jpg"/>MEDICAL</div>
-<div className="courses"><img src="./pic/oth.jpg"/>OTHERS</div>
+<div className="courses" onClick={()=>navi('engineering')}>
+<img src="./pic/eng.jpg"/>
+<h4>ENGINEERING</h4></div>
+<div className="courses" onClick={()=>navi('medical')}>
+<img src="./pic/med.jpg"/>
+<h4>MEDICAL</h4></div>
+<div className="courses" onClick={()=>navi('others')}>
+<img src="./pic/oth.jpg"/>
+<h4>OTHERS</h4></div>
 </div>
-
   </div>
+
   </div>
 );
 }

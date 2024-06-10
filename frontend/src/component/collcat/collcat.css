@@ -1,0 +1,14 @@
+.categories{
+background:black;
+margin:0;
+color:white;
+border:1px solid green;
+}
+.categories>div{
+display:flex;
+flex-wrap:wrap;
+gap:50px
+}
+.categories>h1{
+margin:20px;
+}

@@ -8,6 +8,10 @@
     height:650px;
   }
 }
+.ct>h1{
+color:white;
+text-align:center;
+}
 .Main{
   display:flex;
   align-items:center;
@@ -17,7 +21,8 @@
   background:black;
   animation:rdc;
   width:100%;
-  height:100%; 
+  min-height:100vh;
+
  animation-duration:0.3s;
 }
 .bar{
@@ -30,18 +35,27 @@ box-shadow:1px 0 5px 2px white;
 .courses{
 width:200px;
 height:200px;
-color:white;
+display:flex;
+align-items:center;
+justify-content:center;
 }
-.courses img{
+.courses>img{
 opacity:60%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
+filter:blur(2px);
+z-index:0;
+position:absolute;
 height:150px;
 width:150px;
 }
 .coursecontainer{
   display:flex;
+gap:15px;
   align-items:center;
   justify-content:center;
+}
+.courses>h4{
+margin:0;
+z-index:1;
+color:white;
+text-align:center;
 }

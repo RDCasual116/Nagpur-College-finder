@@ -10,9 +10,9 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","/pic/pic2.jpg","/pic/pic3.jpg","/pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 {
 id:"2",
@@ -25,9 +25,9 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 {
 id:"3",
@@ -40,9 +40,9 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 {
 id:"4",
@@ -55,9 +55,9 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 {
 id:"5",
@@ -70,9 +70,9 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 {
 id:"6",
@@ -85,8 +85,8 @@ o_course:["MTECH","MBA","MCA"],
 address:"KDK College Rd, Opposite Telephone Exchange, Nandanvan, Nagpur, Maharashtra 440009",
 website:"https://www.kdkce.edu.in/",
 fees:"₹1,07,000",
-logo:"./pic/logo.png",
-photo:["./pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
-v_photo:"./pic/v_photo.jpg"
+logo:"/pic/logo.png",
+photo:["/pic/pic1.jpg","./pic/pic2.jpg","./pic/pic3.jpg","./pic/pic4.jpg"],
+v_photo:"/pic/v_photo.jpg"
 },
 ]

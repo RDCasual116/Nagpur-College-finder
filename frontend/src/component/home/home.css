@@ -1,10 +1,8 @@
-*{
-color:white;
-}
+
 .main1{
 transform:translateY(-670px);
 }
-h1{
+.title h1{
 position:relative;
 z-index:1;
 font-weight:900;
@@ -51,13 +49,14 @@ overflow:hidden;
 transition:0.3s;
 position:relative;
 }
-h1,span{
+.title h1,.about span{
 text-align:center;
 }
-button{
+.title button{
 flex-grow:0;
 flex-shrink:0;
 width:150px;
+color:white;
 display:block;
 padding:30px;
 background:transparent;
@@ -69,13 +68,13 @@ transition:0.1s;
 position:relative;
 z-index:1;
 }
-button:hover{
+.title button:hover{
 cursor:pointer;
 background:white;
 color:black;
 border:2px solid black;
 }
-ul{
+.about ul{
 display:flex;
 list-style:none;
 align-items:center;
