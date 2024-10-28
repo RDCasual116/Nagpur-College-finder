@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Form</title>
+</head>
+<body>
+    <h2>Profile Form</h2>
+    <form action="http://localhost:8000/api/coll" method="POST" enctype="multipart/form-data">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="website">Website:</label>
+        <input type="url" id="website" name="website">
+        <br><br>
+
+        <label for="about">About:</label>
+        <input type="text" id="about" name="about">
+        <br><br>
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location">
+        <br><br>
+
+        <label for="photos">Upload Photos:</label>
+        <input type="file" id="photos" name="photos" accept="image/*" multiple>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
