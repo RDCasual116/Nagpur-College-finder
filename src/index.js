@@ -7,6 +7,7 @@ const upload=require("./middlewares/multer.js");
 const cloudinary=require("./utils/cloudinary.js");
 const College=require("./models/college.js");
 const collroute=require("./routes/college.js");
+const serviceroute=require("./routes/service.js");
 
 const app=express();
 const port=process.env.PORT||7000;
@@ -20,6 +21,9 @@ app.use(express.static("../public"));
 
 app.use('/api/user',user);
 app.use('/api/college',collroute);
+app.use('/api/service',serviceroute);
+
+
 //temperary route
 app.post('/api/coll',upload.array('photos',10),async(req,res,next)=>{
 try{

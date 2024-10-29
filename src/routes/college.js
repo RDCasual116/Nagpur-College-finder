@@ -1,8 +1,8 @@
 const {Router}=require("express");
-const {allCollege}=require("../controllers/college.js");
+const {allCollege,findCollege}=require("../controllers/college.js");
 const router=Router();
 
 
 router.route("/allcollege").get(allCollege);
-
+router.route("/:id").get(findCollege);
 module.exports=router;
