@@ -5,4 +5,6 @@ const router=Router();
 
 router.route("/allcollege").get(allCollege);
 router.route("/:id").get(findCollege);
+
+
 module.exports=router;
