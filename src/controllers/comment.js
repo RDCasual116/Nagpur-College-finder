@@ -5,10 +5,11 @@ const Service=require("../models/service.js");
 
 const addCComment = async (req, res, next) => {
     const comment = req.body;
+//    console.log(comment);
     try {
         // Create a new comment
         const tar = await Comment.create({
-            by: comment.user,
+            by: req.user,
             content: comment.content,
             rating: comment.rating,
         });
@@ -36,7 +37,7 @@ const addSComment = async (req, res, next) => {
     try {
         // Create a new comment
         const tar = await Comment.create({
-            by: comment.user,
+            by: req.user,
             content: comment.content,
             rating: comment.rating,
         });
@@ -58,4 +59,5 @@ const addSComment = async (req, res, next) => {
         next(err);
     }
 };
+
 module.exports = { addCComment,addSComment };

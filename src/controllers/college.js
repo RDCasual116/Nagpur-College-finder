@@ -1,4 +1,5 @@
 const College=require("../models/college.js");
+const User=require("../models/user.js");
 const Comment=require("../models/comment.js");
 
 
@@ -41,5 +42,24 @@ const college = await College.find({id}).populate({
     next(err);
     }
 }
+const collegesave=async(req,res,next)=>{
+const collegeid=req.params.id;
+college=await College.findOne({id:collegeid});
+console.log(college);
+    college=college._id;
+  /*
+   */
+    try{
+  const user = await User.findByIdAndUpdate(
+      req.user,
+      { $addToSet: { bookmarkcoll: college } }, // Add to `fav` array if it doesn't already exist
+      { new: true, useFindAndModify: false } // Return the updated document
+    );
+ res.json({success:true}); 
+}
+catch(err){
+next(err);
+}}
 
-module.exports={allCollege,findCollege};
+
+module.exports={allCollege,findCollege,collegesave};

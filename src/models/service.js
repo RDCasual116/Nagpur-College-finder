@@ -5,7 +5,19 @@ const serviceSchema=new mongoose.Schema(
 		type:String,
 		required:true,
 	},
+        id:{
+            type:String,
+            required:true,
+            unique:true,
+        }
+        ,
+        type:{
+            type:String,
+            enum:["room","tiffin"],
+            required:true
+        },
         by:{
+
         	 type:mongoose.Schema.Types.ObjectId,
 		 ref:"User",
 		 required:true,

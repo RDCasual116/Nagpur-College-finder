@@ -125,5 +125,13 @@ catch(err){
 next(err);
 }
 }
+const fetchFavColl=async(req,res,next)=>{
+const colleges=await User.findById(req.user).bookmarkcol;
+    res.json({colleges});
+}
 
-module.exports={emailEntry,verify,login};
+const fetchFavSer=async(req,res,next)=>{
+const service=await User.findById(req.user).bookmarkser;
+    res.json({service});
+}
+module.exports={emailEntry,verify,login,fetchFavColl,fetchFavSer};

@@ -1,7 +1,8 @@
 const jwt=require("jsonwebtoken");
+const User=require("../models/user.js");
 
-const authcheck= (req,res,next)=>{
-/*const token=req.cookies?.accessToken;
+const authcheck= async(req,res,next)=>{
+const token=req.cookies?.accessToken;
    if(!token){
 return res.json({
     success:false,
@@ -12,8 +13,12 @@ return res.json({
 if(!decodedToken){
 return res.json({success:false,message:"invalid token"});
 }
-req.email=decodedToken.email; */
-req.user="671dff5c1317b87b1cb1a5fb";
+//console.log(decodedToken);
+const email=decodedToken.email;
+console.log(email);
+req.user=await User.findOne({email});
+console.log(req.user);
+req.user=req.user._id;
 next();
 }
 
